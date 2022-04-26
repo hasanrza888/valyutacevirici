@@ -1,0 +1,273 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto';
+    }
+    
+    header {
+        background-color: #F5F5F6;
+        height: 50px;
+        /* width: 100%; */
+        /* min-width: 1152px; */
+        padding-top: 15px;
+    }
+    
+    .headercontainer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 89px;
+        height: 23px;
+        cursor: pointer;
+    }
+    
+    .headercontainer ul {
+        width: 70%;
+        /* min-width: 800px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .headercontainer ul li {
+        margin-left: 10px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #959BA4;
+        cursor: pointer;
+    }
+    
+    .headercontainer ul li:first-child {
+        color: #000000;
+    }
+    
+    .boyti {
+        border: none;
+        background-color: white;
+        width: 58px;
+        height: 25px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .main {
+        width: 50%;
+        max-width: 641px;
+        margin: auto;
+        margin-top: 56px;
+    }
+    
+    .hbir {
+        width: 90%;
+        max-width: 587px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+    }
+    
+    .valycont {
+        width: 100%;
+        max-width: 641px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 33px;
+    }
+    
+    .valy1 {
+        max-width: 259px;
+    }
+    
+    .valy2 {
+        max-width: 259px;
+        margin-left: 20%;
+    }
+    
+    .val1_p,
+    .val2_p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9F9F9F;
+        height: 28px;
+    }
+    
+    .cur1,
+    .cur2 {
+        display: flex;
+        width: 100%;
+        height: 30px;
+    }
+    
+    .curt1buttons,
+    .curt2buttons {
+        width: 25%;
+        border: 1px solid #E5E5E5;
+        background: transparent;
+        /* height: 30px; */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #C6C6C6;
+    }
+    
+    .active1,
+    .curt1buttons:hover {
+        background-color: #833AE0;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .active2,
+    .curt2buttons:hover {
+        background-color: #833AE0;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .inputcontainer1,
+    .inputcontainer2 {
+        width: 100%;
+        height: 102px;
+        border: 1px solid #E5E5E5;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    
+    .firstinput,
+    .secondinput {
+        font-size: 36px;
+        font-weight: 700;
+        width: 90%;
+        margin-left: 14px;
+        margin-top: 11px;
+        border: none;
+        outline: none;
+    }
+    
+    .display1,
+    .display2 {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #C6C6C6;
+        margin-left: 16px;
+    }
+    
+    body {
+        position: relative;
+    }
+    
+    .errornotification {
+        max-width: 400px;
+        width: 60%;
+        height: 150px;
+        background-color: #833AE0;
+        border-radius: 20px;
+        color: white;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 15px solid red;
+        position: absolute;
+        left: 35%;
+        top: 250px;
+        display: none;
+        opacity: 90%;
+    }
+    
+    .errortext {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .deletebutton {
+        width: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Nunito Sans';
+        user-select: none;
+        cursor: pointer;
+        margin-left: 92%;
+    }
+    
+    .deletebutton:hover {
+        color: red;
+        user-select: none;
+    }
+    
+    @media screen and (max-width: 850px) {
+        .valycont {
+            display: flex;
+            flex-direction: column;
+        }
+        .valy2 {
+            margin-left: unset;
+            margin-top: 50px;
+        }
+        .main {
+            width: 90%;
+            max-width: 259px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .headercontainer ul {
+            display: none;
+        }
+        .headercontainer {
+            width: 90%;
+        }
+        .firstinput,
+        .secondinput {
+            font-size: 20px;
+        }
+        .hbir {
+            font-size: 20px;
+            width: 100%;
+        }
+        .boyti {
+            margin-left: 10%;
+        }
+        .errornotification {
+            max-width: 450px;
+            width: 70%;
+            left: 20%;
+            height: 200px;
+            padding: 20px;
+        }
+        .errortext {
+            font-size: 30px;
+        }
+        .deletebutton {
+            font-size: 30px;
+        }
+    }

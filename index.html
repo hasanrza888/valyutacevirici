@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta cevirici</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+            <img src="images/Asset1.png" alt="logo" class="logo">
+            <ul>
+                <li>БАНК</li>
+                <li>БИЗНЕС</li>
+                <li>ИНВЕСТИЦИИ</li>
+                <li>СТРАХОВАНИЕ</li>
+                <li>МОБАЙЛ</li>
+                <li>ПУТЕШЕСТВИЯ</li>
+                <li>РАЗВЛЕЧЕНИЯ</li>
+            </ul>
+            <button class="boyti">ВОЙТИ</button>
+        </div>
+
+    </header>
+
+    <div class="main">
+
+        <h1 class="hbir">Конвертер валют онлайн</h1>
+
+        <div class="valycont">
+
+            <div class="valy1">
+
+                <p class="val1_p">У меня есть </p>
+
+                <div class="cur1 moneys">
+
+                    <button value="RUB" class="curt1buttons active1">RUB</button>
+                    <button value="USD" class="curt1buttons">USD</button>
+                    <button value="EUR" class="curt1buttons">EUR</button>
+                    <button value="GBP" class="curt1buttons">GBP</button>
+
+                </div>
+
+                <div class="inputcontainer1">
+                    <input type="text" value="5000" class="firstinput">
+                    <p class="display1">1 RUB = 0.0135 USD</p>
+                </div>
+
+            </div>
+
+            <div class="valy2">
+
+                <p class="val2_p">Хочу приобрести</p>
+
+                <div class="cur2 moneys">
+
+                    <button value="RUB" class="curt2buttons">RUB</button>
+                    <button value="USD" class="curt2buttons active2">USD</button>
+                    <button value="EUR" class="curt2buttons">EUR</button>
+                    <button value="GBP" class="curt2buttons">GBP</button>
+
+                </div>
+
+                <div class="inputcontainer2">
+                    <input type="text" value="67.6685" class="secondinput">
+                    <p class="display2">1 USD = 73.8896 RUB</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="errornotification">
+        <p class="deletebutton">X</p>
+        <p class="errortext">Something went wrong</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
