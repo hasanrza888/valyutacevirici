@@ -108,13 +108,17 @@ secondinput.addEventListener('keyup', () => {
 
 curt1buttons.forEach(but1 => {
     but1.addEventListener('click', () => {
-        //active class addition for color change
-        curt1buttons.forEach(btn1 => {
-            btn1.classList.remove('active1')
-        })
-        but1.classList.add('active1');
+        if (but1.innerText == cur2val) {
+            errorsend('Currencies are equal')
+        } else if (but1.innerText != cur2val) {
+            cur1val = but1.innerText;
 
-        cur1val = but1.innerText;
+            //active class addition for color change
+            curt1buttons.forEach(btn1 => {
+                btn1.classList.remove('active1')
+            })
+            but1.classList.add('active1');
+        }
         convert(cur1val, cur2val, checker);
         displaycur(cur1val, cur2val);
     })
@@ -122,13 +126,17 @@ curt1buttons.forEach(but1 => {
 
 curt2buttons.forEach(but2 => {
     but2.addEventListener('click', () => {
-        //active class addition for color change
-        curt2buttons.forEach(btn2 => {
-            btn2.classList.remove('active2')
-        })
-        but2.classList.add('active2');
+        if (but2.innerText == cur1val) {
+            errorsend('Currencies are equal')
+        } else if (but2.innerText != cur1val) {
+            cur2val = but2.innerText;
 
-        cur2val = but2.innerText;
+            //active class addition for color change
+            curt2buttons.forEach(btn2 => {
+                btn2.classList.remove('active2')
+            })
+            but2.classList.add('active2');
+        }
         convert(cur1val, cur2val, checker);
         displaycur(cur1val, cur2val);
     })
